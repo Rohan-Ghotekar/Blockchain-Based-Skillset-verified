@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+/* Global Theme Variables */
+
+
+:root {
+  --color-bg: #0b0c10ea;
+  --color-bg-light: #f5f6fa;
+  --color-primary: #1e2022;
+  --color-secondary: #c5c6c7;
+  --color-accent: #222; /* Use system black for accent */
+  --color-accent-hover: #111;
+  --color-btn-bg: #222; /* Button background is black */
+  --color-btn-hover: #111; /* Button hover is darker black */
+  --color-white: #fff;
+  --color-border: #e0e0e0;
+  --color-shadow: 0px 4px 24px 0px rgba(0,0,0,0.12);
+  --radius: 12px;
+  --transition: 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0b0c10ea;
+    --color-bg-light: #23272f;
+    --color-primary: #fff;
+    --color-secondary: #c5c6c7;
+    --color-accent: #111; /* Even darker for dark mode */
+    --color-accent-hover: #000;
+    --color-btn-bg: #111;
+    --color-btn-hover: #000;
+    --color-border: #444;
+    --color-white: #fff;
+    --color-shadow: 0px 4px 24px 0px rgba(0,0,0,0.25);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-bg) !important;
+  color: var(--color-secondary) !important;
+  transition: background var(--transition), color var(--transition);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Modern container and card styles */
+
+.modern-card, .card, .ui.card, .employee-card, .organization-card, .skill-des, .personal-info, .employee-des {
+  background: var(--color-bg-light) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--color-shadow) !important;
+  border: 1px solid var(--color-border) !important;
+  color: var(--color-primary) !important;
+  transition: box-shadow var(--transition), transform var(--transition), background var(--transition);
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .modern-card, .card, .ui.card, .employee-card, .organization-card, .skill-des, .personal-info, .employee-des {
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0.5rem;
+  }
+}
+
+.modern-card:hover, .card:hover, .ui.card:hover, .employee-card:hover, .organization-card:hover, .skill-des:hover, .personal-info:hover, .employee-des:hover {
+  box-shadow: 0px 8px 32px 0px var(--color-accent);
+  transform: translateY(-4px) scale(1.03);
+}
+
+
+
+button, .button, .ui.button, .button-css-admin, .button-css {
+  border-radius: var(--radius) !important;
+  background: var(--color-btn-bg) !important;
+  color: var(--color-white) !important;
+  border: 2px solid var(--color-accent) !important;
+  box-shadow: 0px 2px 8px 0px var(--color-accent) !important;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+button:hover, .button:hover, .ui.button:hover, .button-css-admin:hover, .button-css:hover {
+  background: var(--color-btn-hover) !important;
+  color: var(--color-white) !important;
+  border: 2px solid var(--color-accent-hover) !important;
+  box-shadow: 0px 4px 16px 0px var(--color-accent-hover) !important;
+  transform: scale(1.05);
+}
+
+input, .ui.input > input, .form-inputs-admin > input, .form-inputs > input {
+  border-radius: var(--radius) !important;
+  background: var(--color-bg-light) !important;
+  border: 1px solid var(--color-border) !important;
+  box-shadow: 0px 0px 1px 0px var(--color-accent) !important;
+  color: var(--color-primary) !important;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow var(--transition), border var(--transition);
+}
+
+input:focus, .ui.input > input:focus, .form-inputs-admin > input:focus, .form-inputs > input:focus {
+  box-shadow: 0px 0px 4px 1px var(--color-accent) !important;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--color-bg-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: var(--radius);
+  transition: background var(--transition);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Add fade-in effect for all main containers */
+.fade-in {
+  animation: fadeIn 0.7s cubic-bezier(.4,0,.2,1);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

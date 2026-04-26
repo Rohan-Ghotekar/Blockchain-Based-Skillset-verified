@@ -1,0 +1,122 @@
+.modal-des {
+  background: var(--color-btn-bg, #222) !important;
+  border-radius: var(--radius, 12px) !important;
+  color: var(--color-white, #fff) !important;
+  border: 1.5px solid var(--color-accent, #222) !important;
+  box-shadow: 0 4px 24px 0 var(--color-shadow, rgba(0,0,0,0.18)) !important;
+  padding: 2rem 2.5rem;
+  max-width: 95vw;
+  width: 100%;
+  min-width: 0;
+  word-break: break-word;
+  overflow-x: auto;
+  transition: box-shadow var(--transition, 0.25s), background var(--transition, 0.25s);
+  animation: fadeIn 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+@media (max-width: 600px) {
+  .modal-des {
+    padding: 1rem 0.5rem;
+    max-width: 99vw;
+  }
+}
+
+.modal-heading {
+  background: var(--color-btn-bg, #222) !important;
+  border-top-left-radius: var(--radius, 12px) !important;
+  border-top-right-radius: var(--radius, 12px) !important;
+  font-family: "Arvo", serif !important;
+  color: var(--color-white, #fff) !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  width: 100% !important;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.modal-content {
+  background: var(--color-btn-bg, #222) !important;
+  color: var(--color-white, #fff) !important;
+}
+
+.modal-actions {
+  background: var(--color-btn-bg, #222) !important;
+  border-bottom-left-radius: var(--radius, 12px) !important;
+  border-bottom-right-radius: var(--radius, 12px) !important;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 2px solid var(--color-accent, #222);
+  margin: 1rem 0;
+}
+
+.form-inputs > input {
+  border-radius: var(--radius, 12px) !important;
+  background: var(--color-bg-light, #23272f) !important;
+  border: 1px solid var(--color-accent, #222) !important;
+  box-shadow: 0px 0px 1px 0px var(--color-accent, #222) !important;
+  color: var(--color-white, #fff) !important;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow var(--transition, 0.25s), border var(--transition, 0.25s);
+}
+
+.form-inputs > input::placeholder {
+  color: var(--color-secondary, #c5c6c7) !important;
+  opacity: 0.7;
+}
+
+.form-inputs > input::selection {
+  color: var(--color-accent, #66fcf1) !important;
+}
+
+.form-inputs > input:focus {
+  box-shadow: 0px 0px 4px 1px var(--color-accent, #222) !important;
+  outline: none;
+}
+
+.button-css {
+  border-radius: 10px !important;
+  color: white !important;
+  background: #1e2022ea !important;
+  border: 2px solid white !important;
+  box-shadow: 0px 0px 2px 0px white !important;
+  text-align: center;
+}
+
+.button-css {
+  border-radius: 10px !important;
+  color: var(--color-white, #fff) !important;
+  background: var(--color-btn-bg, #222) !important;
+  border: 2px solid var(--color-accent, #222) !important;
+  box-shadow: 0px 0px 2px 0px var(--color-accent, #222) !important;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s all cubic-bezier(.4,0,.2,1);
+}
+
+.button-css:hover {
+  background: var(--color-btn-hover, #111) !important;
+  color: var(--color-white, #fff) !important;
+  border: 2px solid var(--color-accent-hover, #111) !important;
+}
+
+.pos-middle-qr {
+  text-align: center;
+}
+
+.design-info-table {
+  background: var(--color-bg-light, #23272f) !important;
+  border: 1px solid var(--color-accent, #222) !important;
+  padding: 8px 16px;
+  color: var(--color-white, #fff) !important;
+  box-shadow: 0 1px 4px 0 var(--color-shadow, rgba(0,0,0,0.12)) !important;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}

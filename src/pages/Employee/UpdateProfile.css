@@ -1,0 +1,127 @@
+
+/* Responsive edit/add button */
+/* Responsive edit/add button - smaller container */
+.add-button {
+  float: right;
+  height: 22px;
+  width: 22px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid var(--color-accent, #66fcf1);
+  background-color: var(--color-accent, #66fcf1);
+  color: var(--color-primary, #1e2022);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 0 var(--color-accent, #66fcf1);
+  cursor: pointer;
+  transition: background var(--transition, 0.25s), color var(--transition, 0.25s), box-shadow var(--transition, 0.25s), transform var(--transition, 0.25s);
+}
+
+/* Make the pencil icon responsive */
+/* Smaller pencil icon */
+/* Even smaller pencil icon */
+/* Even smaller pencil icon with left padding */
+/* Slightly smaller pencil icon, no padding */
+.add-button > i {
+  font-size: 0.38rem;
+  transition: font-size 0.2s;
+}
+
+@media (max-width: 900px) {
+  .add-button {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+/* Add right padding to text next to icon for spacing */
+
+
+.add-button:hover {
+  transform: scale(1.1, 1.1);
+  background: var(--color-primary, #1e2022);
+  color: var(--color-accent, #66fcf1);
+
+
+
+.edit-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+  border: 2px solid var(--color-accent, #222);
+  background-color: var(--color-btn-bg, #222);
+  color: var(--color-white, #fff);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 0 var(--color-accent, #222);
+  cursor: pointer;
+  transition: background var(--transition, 0.25s), color var(--transition, 0.25s), box-shadow var(--transition, 0.25s), transform var(--transition, 0.25s);
+.delete-button-visiblility:hover {
+  transform: scale(1.1, 1.1);
+  color: var(--color-primary, #1e2022);
+}
+  background: var(--color-btn-hover, #111);
+  color: var(--color-white, #fff);
+  box-shadow: 0 4px 16px 0 var(--color-btn-hover, #111);
+  border: 1px solid var(--color-accent, #66fcf1);
+  border-radius: var(--radius, 12px);
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px 12px;
+  cursor: pointer;
+  background: var(--color-accent, #66fcf1);
+  color: var(--color-primary, #1e2022);
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 var(--color-accent, #66fcf1);
+  transition: background var(--transition, 0.25s), color var(--transition, 0.25s), box-shadow var(--transition, 0.25s), transform var(--transition, 0.25s);
+}
+.endorsement-req-button:hover {
+  transform: scale(1.04, 1.04);
+  background: var(--color-primary, #1e2022);
+  color: var(--color-accent, #66fcf1);
+  box-shadow: 0 4px 16px 0 var(--color-primary, #1e2022);
+}
+
+  background: var(--color-btn-bg, #222);
+  color: var(--color-white, #fff);
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 var(--color-accent, #222);
+  transition: background var(--transition, 0.25s), color var(--transition, 0.25s), box-shadow var(--transition, 0.25s), transform var(--transition, 0.25s);
+
+/* ...existing code... */
+  margin-top: 40px;
+  border-radius: 10px;
+  background: var(--color-btn-hover, #111);
+  color: var(--color-white, #fff);
+  box-shadow: 0 4px 16px 0 var(--color-btn-hover, #111);
+
+.sidechat-body {
+  overflow: auto !important;
+}
+
+.notification-sidechat {
+  color: white !important;
+}
+
+.notification-sidechat-subheading {
+  color: #c5c6c7 !important;
+}
+
+.header-row > th {
+  border-bottom: 1px solid white !important;
+}
+
+.row-cell-container {
+  cursor: pointer;
+}
+
+.header-row-cell {
+  border-bottom: 1px solid #c5c6c7 !important;
+}
+
+.row-cell-container :hover {
+  transform: scale(1.01, 1.01);
+  background: rgba(31, 30, 30, 0.1);
+}

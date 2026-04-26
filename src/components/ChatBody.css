@@ -1,0 +1,38 @@
+
+.design-chat-input > input {
+  background: var(--color-btn-bg, #222) !important;
+  border: 1px solid var(--color-accent, #222) !important;
+  box-shadow: 0 2px 8px 0 var(--color-accent, #222) !important;
+  color: var(--color-white, #fff) !important;
+  border-radius: var(--radius, 12px) !important;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: box-shadow var(--transition, 0.25s), border var(--transition, 0.25s), background var(--transition, 0.25s);
+}
+
+.design-chat-input > input:focus {
+  box-shadow: 0 0 0 2px var(--color-accent, #222) !important;
+  outline: none;
+}
+
+
+.design-chat-input > button {
+  background: var(--color-btn-bg, #222) !important;
+  color: var(--color-white, #fff) !important;
+  border: 1.5px solid var(--color-accent, #222) !important;
+  box-shadow: 0 2px 8px 0 var(--color-accent, #222) !important;
+  border-radius: var(--radius, 12px) !important;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--transition, 0.25s), color var(--transition, 0.25s), box-shadow var(--transition, 0.25s), transform var(--transition, 0.25s);
+}
+
+
+.design-chat-input > button:hover {
+  background: var(--color-btn-hover, #111) !important;
+  color: var(--color-white, #fff) !important;
+  box-shadow: 0 4px 16px 0 var(--color-btn-hover, #111) !important;
+  transform: scale(1.05);
+}
